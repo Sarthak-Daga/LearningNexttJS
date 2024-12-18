@@ -17,9 +17,9 @@ export default async function PostCard() {
   return (
     <div>
       {posts.map((post) => (
-        <Link href={`/postcards/posts/${encodeURIComponent(post.title)}`} key={post.it}>
+        <Link href={`/postCards/posts/${encodeURIComponent(post.title)}`} key={post.it}>
           <Card 
-            // key ={post.it}
+            key ={post.it}
             id={post.userId}
             title={post.title}
             body={post.body}

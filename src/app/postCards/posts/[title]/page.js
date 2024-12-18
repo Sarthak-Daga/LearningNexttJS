@@ -1,5 +1,5 @@
 export default async function Cards({ params }) {
-  const { title } = params // Extract title from params
+  const { title } = await params // Extract title from params
 
   // Fetch posts data
   const res = await fetch('https://jsonplaceholder.typicode.com/posts')
